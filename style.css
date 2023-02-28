@@ -1,0 +1,190 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    font-family: 'Merriweather Sans', sans-serif;
+    width: 100%;
+    max-width: 100%;
+}
+
+.color_bg {
+    background-color: #00b4ad;
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.header h1 {
+    font-weight: bolder;
+    padding-top: 70px;
+    border-radius: 2px solid white;
+    margin-top: -8px;
+    font-size: 34px;
+}
+
+.header p {
+    font-weight: lighter;
+    color: #ddf5f5;
+}
+
+.aqua_bg {
+    background-color: #00b4ad;
+    width: 100%;
+    margin: 0;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    text-align: center;
+    padding-bottom: 70px;
+    width: 87%;
+    padding-left: 90px;
+}
+
+.section h1 {
+    font-size: 30px;
+    margin-bottom: -15px;
+}
+
+.section p {
+    color: #ddf5f5;
+}
+
+.section .two h1 {
+    margin-top: -8px;
+}
+
+.section .three h1 {
+    margin-top: -8px;
+}
+
+.section .four h1 {
+    margin-top: -8px;
+}
+
+.section .five h1 {
+    margin-top: -8px;
+}
+
+.section .eight h1 {
+    margin-top: -8px;
+}
+
+.section div:nth-child(2n) {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.section div:nth-child(2n+1) {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.section div:nth-child(4n) {
+    border-bottom: 1px solid white;
+    border-right: none;
+}
+
+.section div:nth-child(-1n+8) {
+    border-bottom: none;
+}
+
+.section div:nth-child(-n+4) {
+    border-bottom: 1px solid white;
+}
+
+.section div:nth-child(1n+8) {
+    border-top: 1px solid white;
+    border-bottom: none;
+}
+
+.white_bg {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 300px;
+}
+
+.count {
+    padding-left: 100px;
+    margin-top: 30px;
+}
+
+.count h1 {
+    font-size: 50px;
+    color: #33547b;
+}
+
+.count p {
+    font-size: 22px;
+    margin-top: -20px;
+    color: #c0c7dd;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 20pc;
+    margin-top: 70px;
+}
+
+.logo a:hover {
+    background-color: orange;
+}
+
+.logo img {
+    height: 130px;
+    width: 150px;
+    filter: grayscale(100%);
+}
+
+img:hover {
+    filter: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    .header {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    .section {
+        display: inline;
+        height: auto;
+        width: 100%;
+    }
+
+    .section div {
+
+        border-bottom: 1px solid white;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    .footer {
+        display: inline;
+    }
+
+    .count {
+        margin-left: 10px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-left: 10px;
+    }
+}
